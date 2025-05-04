@@ -14,6 +14,7 @@ Aquí tienes varias formas de encontrar la ubicación de Python en tu PC:
 4. Dentro de esa subcarpeta, busca el archivo python.exe. Por ejemplo:
    
 	1 	C:\Users\TuUsuario\AppData\Local\Programs\Python\Python310\python.exe
+__________________________________________________________
 
 📌 Método 2: Usar el Administrador de Paquetes de Windows (Powershell)
 
@@ -27,7 +28,10 @@ O para Python 3:
  
 Esto te mostrará la ubicación del executable de Python si está instalado.
 
+________________________________________________________
+
 📌 Método 3: Verificar la Instalación de Python
+
 Si aún no encuentras Python, es posible que no esté instalado. Puedes verificarlo de estas maneras:
 
 1. Comprobar si está instalado desde el Panel de Control
@@ -36,41 +40,41 @@ Si aún no encuentras Python, es posible que no esté instalado. Puedes verifica
    
 2. Instalar Python si no está presente
  - Visita la página oficial de Python .
-Descarga e instala la versión más reciente de Python.
-Asegúrate de marcar la opción "Add Python to PATH" durante la instalación. Esto asegura que Python esté disponible globalmente en tu sistema.
+ - Descarga e instala la versión más reciente de Python.
+ - Asegúrate de marcar la opción "Add Python to PATH" durante la instalación. Esto asegura que Python esté disponible globalmente en tu sistema.
+
+____________________________________________________
+
 📌 Método 4: Agregar Python al PATH Manualmente
 Si Python está instalado pero no está en el PATH, puedes agregarlo manualmente:
 
-Buscar la ubicación de Python :
-Usa alguno de los métodos anteriores para encontrar la carpeta donde está instalado Python (por ejemplo, C:\Users\TuUsuario\AppData\Local\Programs\Python\Python310).
-Agregar Python al PATH :
-Ve a Configuración > Sistema > Acerca de > Información del sistema > Configuración avanzada del sistema > Variables de entorno .
-En Variables del sistema , busca la variable Path y edita su valor.
-Agrega las siguientes rutas:
+ 1. Buscar la ubicación de Python :
+	- Usa alguno de los métodos anteriores para encontrar la carpeta donde está instalado Python (por ejemplo, C:\Users\TuUsuario\AppData\Local\Programs\Python\Python310).
+
+ 2. Agregar Python al PATH :
+	- Ve a Configuración > Sistema > Acerca de > Información del sistema > Configuración avanzada del sistema > Variables de entorno .
+	- En Variables del sistema , busca la variable Path y edita su valor.
+	- Agrega las siguientes rutas:
 C:\Users\TuUsuario\AppData\Local\Programs\Python\Python3x
 C:\Users\TuUsuario\AppData\Local\Programs\Python\Python3x\Scripts
 (Reemplaza Python3x con la versión que tengas, como Python310).
-Reinicia la terminal para que los cambios surtan efecto.
+
+ 3. Reinicia la terminal para que los cambios surtan efecto.
+    
 📌 Verificar después de configurar el PATH
+
 Después de configurar el PATH, vuelve a abrir una nueva terminal y ejecuta:
-
-bash
-
-
-1
-where python
+	
+ 	where python
+  
 Ahora debería mostrarte la ubicación de Python.
 
 ¿Qué hacer si sigues sin encontrar Python?
-Reinstala Python : Asegúrate de marcar la opción "Add Python to PATH" durante la instalación.
-Comprueba si tienes múltiples versiones de Python : Es posible que tengas varias versiones instaladas, y solo algunas están configuradas en el PATH.
+ - Reinstala Python : Asegúrate de marcar la opción "Add Python to PATH" durante la instalación.
+ - Comprueba si tienes múltiples versiones de Python : Es posible que tengas varias versiones instaladas, y solo algunas están configuradas en el PATH.
 
 # conf_pipenv
 Los pasos para configurar el entorno virtual con Pipenv
-
-# web_personal
-django 
-run code
 
 	para ejecutar la terminal de forma rapida y de ahi en adelante podemos presionar
 	ctrl + alt + n
