@@ -17,6 +17,8 @@ Aquí tienes varias formas de encontrar la ubicación de Python en tu PC:
 __________________________________________________________
 
 📌 Método 2: Usar el Administrador de Paquetes de Windows (Powershell)
+este comando da la linea de donde esta instalado python
+	 python -c "import sys; print(sys.executable)" 
 
 Si usas PowerShell, puedes intentar buscar Python usando el siguiente comando:
 
