@@ -13,7 +13,7 @@ Aquí tienes varias formas de encontrar la ubicación de Python en tu PC:
 
 4. Dentro de esa subcarpeta, busca el archivo python.exe. Por ejemplo:
    
-	1 	C:\Users\TuUsuario\AppData\Local\Programs\Python\Python310\python.exe
+   C:\Users\TuUsuario\AppData\Local\Programs\Python\Python310\python.exe
 __________________________________________________________
 
 📌 Método 2: Usar el Administrador de Paquetes de Windows (Powershell)
