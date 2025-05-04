@@ -1,4 +1,4 @@
-#Para saber si python esta instalado 
+# Para saber si python esta instalado 
 
 Aquí tienes varias formas de encontrar la ubicación de Python en tu PC:
 
