@@ -175,3 +175,227 @@ momento del vídeo seguid las siguientes indicaciones actualizadas:
 [Resumen configuración Linting de Django en VSC (pylint y plugins)](https://gist.github.com/hcosta/6e4066ad1b938c888546c5f0a9616c48)
 
 
+Requisitos previos
+Antes de empezar, asegúrate de tener:
+
+Acceso a internet.
+Permisos de administrador (opcional pero recomendado).
+Una computadora con Windows 10 o 11.
+✅ PASO A PASO: Instalar Python + pipenv en Windows
+🔹 Paso 1: Descargar e instalar Python
+Ve a la página oficial: https://www.python.org/downloads/
+Haz clic en el botón "Download Python X.X.X" (la última versión estable).
+Una vez descargado, ejecuta el instalador.
+En la primera pantalla del instalador:
+Marca la casilla: Add Python to PATH ❗
+Luego haz clic en Install Now
+Esto instala Python y pip, que es necesario para instalar pipenv. 
+
+Cuando termine la instalación, abre PowerShell o CMD y verifica:
+powershell
+
+
+1
+2
+python --version
+pip --version
+Deberías ver algo como:
+
+
+
+1
+2
+Python 3.11.5
+pip 23.2.1 from ... (python 3.11)
+🔹 Paso 2: Instalar pipenv
+Ahora vamos a instalar pipenv usando pip.
+
+En PowerShell o CMD, ejecuta:
+
+powershell
+
+
+1
+pip install pipenv
+⚠️ Si ves un error diciendo que pip no se reconoce, prueba usar: 
+
+powershell
+
+
+1
+python -m pip install pipenv
+🔹 Paso 3: Verificar la instalación de pipenv
+Una vez terminada la instalación, ejecuta:
+
+powershell
+
+
+1
+pipenv --version
+Si todo está bien, verás algo como:
+
+
+
+1
+pipenv, version 2023.12.1
+🔹 Paso 4 (Opcional): Agregar pipenv al PATH (si aún no funciona)
+A veces pipenv no funciona porque no está accesible globalmente. Puedes arreglarlo así:
+
+1. Encuentra dónde se instaló pipenv:
+Ejecuta este comando:
+
+powershell
+
+
+1
+python -c "import site; print(site.getusersitepackages())"
+Te devolverá una ruta como:
+
+
+
+1
+C:\Users\TuUsuario\AppData\Roaming\Python\Python311\site-packages
+La carpeta que necesitas es la Scripts dentro de esta ruta:
+
+
+
+1
+C:\Users\TuUsuario\AppData\Roaming\Python\Python311\Scripts
+2. Agrega esa carpeta al PATH:
+Presiona Win + S y busca: Editar las variables de entorno del sistema.
+En la ventana que aparece, selecciona Variables de entorno...
+En Variables del sistema , selecciona la variable Path y haz clic en Editar .
+Haz clic en Nuevo y pega la ruta completa a la carpeta Scripts.
+Haz clic en Aceptar en todas las ventanas.
+3. Reinicia tu terminal y vuelve a probar:
+powershell
+
+
+1
+pipenv --version
+🔹 Paso 5: Usar pipenv en tu proyecto
+Ahora ya puedes trabajar en tu proyecto. Por ejemplo:
+
+powershell
+
+
+1
+2
+3
+cd D:\PC\Documents\Proyectos\web_personal
+pipenv install django django-ckeditor Pillow pylint pylint-django
+pipenv shell
+Esto creará un entorno virtual e instalará los paquetes que necesitas.
+
+🎉 ¡Listo!
+Con estos pasos, deberías tener Python y pipenv funcionando correctamente en tu PC.
+
+¿Quieres que ahora pruebes con un pequeño proyecto de Django para verificar que todo funciona?
+O si prefieres, podemos revisar tu proyecto actual para asegurarnos de que esté estructurado correctamente.
+¿Qué te gustaría hacer ahora? 😄
+
+PS D:\PC\Documents\Proyectos\web_personal> pipenv chechk     
+ *  History restored 
+
+PS D:\PC\Documents\Proyectos\web_personal> pip install pipenv
+Collecting pipenv
+  Downloading pipenv-2025.0.2-py3-none-any.whl.metadata (17 kB)
+Collecting certifi (from pipenv)
+  Downloading certifi-2025.4.26-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=22 (from pipenv)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting setuptools>=67 (from pipenv)
+  Downloading setuptools-80.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting virtualenv>=20.24.2 (from pipenv)
+  Downloading virtualenv-20.30.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting distlib<1,>=0.3.7 (from virtualenv>=20.24.2->pipenv)
+  Downloading distlib-0.3.9-py2.py3-none-any.whl.metadata (5.2 kB)
+Collecting filelock<4,>=3.12.2 (from virtualenv>=20.24.2->pipenv)
+  Downloading filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting platformdirs<5,>=3.9.1 (from virtualenv>=20.24.2->pipenv)
+  Downloading platformdirs-4.3.7-py3-none-any.whl.metadata (11 kB)
+Downloading pipenv-2025.0.2-py3-none-any.whl (3.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 22.9 MB/s eta 0:00:00
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Downloading setuptools-80.3.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 9.3 MB/s eta 0:00:00
+Downloading virtualenv-20.30.0-py3-none-any.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 48.9 MB/s eta 0:00:00
+Downloading certifi-2025.4.26-py3-none-any.whl (159 kB)
+Downloading distlib-0.3.9-py2.py3-none-any.whl (468 kB)
+Downloading filelock-3.18.0-py3-none-any.whl (16 kB)
+Downloading platformdirs-4.3.7-py3-none-any.whl (18 kB)
+Installing collected packages: distlib, setuptools, platformdirs, packaging, filelock, certifi, virtualenv, pipenv
+Successfully installed certifi-2025.4.26 distlib-0.3.9 filelock-3.18.0 packaging-25.0 pipenv-2025.0.2 platformdirs-4.3.7 setuptools-80.3.0 virtualenv-20.30.0
+
+[notice] A new release of pip is available: 25.0.1 -> 25.1.1
+[notice] To update, run: C:\Users\PC\AppData\Local\Programs\Python\Python313\python.exe -m pip install --upgrade pip
+
+profile
+Qwen3-235B-A22B
+11:47 am
+¡Perfecto! 😄
+Acabas de instalar pipenv correctamente en tu sistema. El mensaje que viste es una confirmación de que todo se instaló sin errores.
+
+✅ Resumen de lo que pasó:
+Ejecutaste:
+bash
+
+
+1
+pip install pipenv
+Descargó las dependencias necesarias:
+setuptools, packaging, virtualenv, y el propio pipenv.
+Terminó con:
+
+
+1
+Successfully installed ...
+Esto significa que ya puedes usar pipenv para crear entornos virtuales e instalar paquetes para tu proyecto web personal 🎉
+
+🔧 Ahora puedes seguir estos pasos:
+1. Crear un entorno virtual e instalar dependencias
+Dentro de tu carpeta de proyecto (web_personal), ejecuta:
+
+powershell
+
+
+1
+pipenv install django django-ckeditor Pillow pylint pylint-django
+Esto creará automáticamente un entorno virtual y un archivo Pipfile con tus dependencias. 
+
+2. Activar el entorno virtual
+powershell
+
+
+1
+pipenv shell
+Verás que la terminal cambia de nombre, indicando que estás dentro del entorno virtual.
+
+3. Verificar que todo funciona
+Dentro del entorno, puedes probar si Django se instaló correctamente:
+
+powershell
+
+
+1
+django-admin --version
+Si ves una versión como 4.2.12, ¡todo está funcionando bien!
+
+📌 Consejo adicional:
+El mensaje:
+
+
+
+1
+[notice] A new release of pip is available: 25.0.1 -> 25.1.1
+Solo es una notificación. Puedes ignorarlo por ahora o actualizar pip así (opcional):
+
+powershell
+
+
+1
+python -m pip install --upgrade pip
+¿Qué quieres hacer ahora?
+
+
