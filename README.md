@@ -74,6 +74,61 @@ Ahora debería mostrarte la ubicación de Python.
  - Comprueba si tienes múltiples versiones de Python : Es posible que tengas varias versiones instaladas, y solo algunas están configuradas en el PATH.
 
 # conf_pipenv
+
+Paso 1: Verificar si pipenv está instalado
+Abre una nueva terminal y ejecuta:
+
+	1 pip show pipenv
+ 
+ - Si aparece información sobre pipenv, está instalado.
+ - Si dice "No matching distribution found for pipenv" , entonces debes instalarlo.
+
+_________________________________________________
+
+Paso 2: Instalar pipenv
+Si no está instalado, ejecuta:
+
+	1 pip install pipenv
+ 
+ Este comando instala pipenv globalmente en tu sistema.
+ 
+_______________________________________________________
+
+Paso 3: Configurar las variables de entorno (solo en Windows)
+
+En Windows, es posible que pipenv no esté en la ruta de acceso (PATH). Sigue estos pasos:
+
+ 1. Abre Configuración > Sistema > Variables de entorno .
+ 2. En Variables del sistema , busca la variable Path y edita su valor.
+ 3. Agrega la siguiente ruta (reemplaza <usuario> con tu nombre de usuario):
+    
+	1 C:\Users\<usuario>\AppData\Roaming\Python\Python3x\Scripts
+(Reemplaza Python3x con la versión de Python que uses, como Python310).
+
+______________________________________________
+
+Paso 4: Verificar la instalación
+Vuelve a intentar ejecutar:
+
+	1 pipenv --version
+ 
+Debería mostrar la versión de pipenv sin errores.
+
+___________________________________
+
+Paso 5: Ejecutar tus comandos nuevamente
+Ahora intenta crear el entorno virtual y instalar las dependencias:
+
+	1. pipenv install django django-ckeditor Pillow pylint pylint-django
+	2. pipenv shell
+ 
+Nota: Corregí "pylint-dja" por "pylint-django" (probablemente fue un error de tipeo).
+
+¿Qué hacer si sigue fallando?
+ - Reinicia la terminal : A veces, los cambios en las variables de entorno requieren reiniciarla.
+ - Usa CMD en lugar de PowerShell : Algunas veces PowerShell bloquea comandos externos. Prueba en el símbolo del sistema (CMD).
+
+__________________________________________________________
 Los pasos para configurar el entorno virtual con Pipenv
 
 	para ejecutar la terminal de forma rapida y de ahi en adelante podemos presionar
