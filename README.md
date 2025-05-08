@@ -11,7 +11,7 @@ python manage.py makemigrations
 
 python manage.py migrate
 
-#Paquetes
+# Paquetes
 
 pip install Pillow -> paquete para la manipulacion de imagnes
 
