@@ -1,5 +1,7 @@
 # Configuracion de Entornor Virtuales
 
+python manage.py runserver
+
 <h2>PIPENV</h2>
 
 1.  activate django2
