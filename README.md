@@ -11,6 +11,10 @@ python manage.py makemigrations
 
 python manage.py migrate
 
+#Paquetes
+
+pip install Pillow -> paquete para la manipulacion de imagnes
+
 
 # Configuracion de Entornor Virtuales
 
