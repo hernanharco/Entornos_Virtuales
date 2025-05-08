@@ -1,6 +1,12 @@
-# Configuracion de Entornor Virtuales
 
-python manage.py runserver
+
+python manage.py runserver -> ejecutar
+python manage.py startapp core
+django-admin startproject webempresa
+python manage.py migrate
+
+
+# Configuracion de Entornor Virtuales
 
 <h2>PIPENV</h2>
 
