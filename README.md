@@ -6,6 +6,8 @@ python manage.py startapp core
 
 django-admin startproject webempresa
 
+python manage.py makemigrations
+
 python manage.py migrate
 
 
