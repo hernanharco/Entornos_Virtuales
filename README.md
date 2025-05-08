@@ -1,10 +1,11 @@
 
+django-admin startproject webempresa
 
 python manage.py runserver -> ejecutar
 
 python manage.py startapp core
 
-django-admin startproject webempresa
+python manage.py createsuperuser
 
 python manage.py makemigrations
 
