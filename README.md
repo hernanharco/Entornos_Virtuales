@@ -1,4 +1,4 @@
-#Configuracion de Entornor Virtuales
+# Configuracion de Entornor Virtuales
 
 <h2>PIPENV</h2>
 1.  activate django2
