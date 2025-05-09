@@ -9,9 +9,9 @@ python manage.py createsuperuser -> configuracion del superusuario
 
 # Para realizar migraciones 
 
-python manage.py makemigrations
+python manage.py makemigrations / python manage.py makemigrations core
 
-python manage.py migrate
+python manage.py migrate / python manage.py migrate core
 
 # Cuando se tiene una base de datos ya creada
 
