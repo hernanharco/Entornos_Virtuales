@@ -5,11 +5,21 @@ python manage.py runserver -> ejecutar
 
 python manage.py startapp core
 
-python manage.py createsuperuser
+python manage.py createsuperuser -> configuracion del superusuario
+
+# Para realizar migraciones 
 
 python manage.py makemigrations
 
 python manage.py migrate
+
+# Cuando se tiene una base de datos ya creada
+
+pip install mysqlclient -> instala mysql
+
+python manage.py inspectdb > models.py -> Lee la base de datos existente y genera los modelos automaticamente
+
+python manage.py inspectdb nombre_tabla > models.py -> si solo que quiere inspeccionar una tabla
 
 # Paquetes
 
