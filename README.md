@@ -23,6 +23,18 @@
 
 _____________
 
+# Paquetes
+
+ - Hacer siempre la linea siguiente asi se evitan muchos problemas
+   
+      python -m pip install --upgrade pip setuptools wheel
+
+1. pip install flask
+
+pip install Pillow -> paquete para la manipulacion de imagnes
+
+_______
+
 django-admin startproject webempresa
 
 python manage.py runserver -> ejecutar
@@ -45,8 +57,8 @@ python manage.py inspectdb > models.py -> Lee la base de datos existente y gener
 
 python manage.py inspectdb nombre_tabla > models.py -> si solo que quiere inspeccionar una tabla
 
-# Paquetes
 
-pip install Pillow -> paquete para la manipulacion de imagnes
+
+
 
 
