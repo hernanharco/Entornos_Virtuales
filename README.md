@@ -15,9 +15,11 @@
 
 1. python -m venv venv / py -3.12 -m venv .venv
 
-2. source venv/bin/activate  # En Windows: venv\Scripts\activate
+2. source venv/bin/activate
+   # En Windows:
+      venv\Scripts\activate
 
-3. pip install -r requirements.txt
+4. pip install -r requirements.txt
 
 _____________
 
