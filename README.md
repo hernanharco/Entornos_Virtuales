@@ -23,7 +23,20 @@
 
 _____________
 
+# Pasos que siempre se hacen
+ pip install django -> instalar DJANGO en el entorno virtual
+
+ python manage.py makemigrations -> Crea la base de datos
+ 
+ python manage.py migrate -> La migra
+
+ python manage.py runserver
+
+
 # Paquetes
+
+Siempre instalar Django
+pip install django
 
  - Hacer siempre la linea siguiente asi se evitan muchos problemas
    
