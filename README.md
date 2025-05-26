@@ -17,7 +17,9 @@
 
 2. source venv/bin/activate
    # En Windows:
-      venv\Scripts\activate
+      venv\Scripts\activate -> si utilizas cmd
+
+      .\venv\Scripts\Activate.ps1 -> si utilizas powershell
 
 4. pip install -r requirements.txt
 
