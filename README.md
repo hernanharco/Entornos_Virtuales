@@ -83,6 +83,28 @@ python manage.py inspectdb > models.py -> Lee la base de datos existente y gener
 python manage.py inspectdb nombre_tabla > models.py -> si solo que quiere inspeccionar una tabla
 
 
+# Para iniciar un proyecto en React creandolo con vite
+
+npm create vite
+
+	colocar un nombre: client
+
+	elegir el frame. React
+
+	variante. javascript
+	
+	entramos en la carpeta cd client
+		npm install
+		
+	correr
+		npm run dev
+		
+	-> para que se comunique nuestro frontend con nuestro backend <-
+	instalando modulos
+
+	npm i react-router-dom react-hot-toast axios react-hook-form 42:51
+
+
 
 
 
