@@ -49,6 +49,7 @@ pip install Pillow -> paquete para la manipulacion de imagnes
 _______
 
    django-admin startproject webempresa
+   
    django-admin startproject tapiceria_rincon_es . -> El punto . significa: "crea el proyecto en esta carpeta"." - me paso que borre el manage.py y con esto lo recupere debo estar en la carpeta principal en este caso fue tapiceria_rincon_es 
 
 python manage.py runserver -> ejecutar
