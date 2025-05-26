@@ -54,6 +54,10 @@ _______
    
    django-admin startproject tapiceria_rincon_es . -> El punto . significa: "crea el proyecto en esta carpeta"." - me paso que borre el manage.py y con esto lo recupere debo estar en la carpeta principal en este caso fue tapiceria_rincon_es 
 
+pip install coreapi -> coreapi es una librería usada por Django REST Framework (DRF) para generar documentación interactiva de tus APIs.
+
+pip install djangorestframework ->  
+
 python manage.py runserver -> ejecutar
 
 python manage.py startapp core
