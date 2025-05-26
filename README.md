@@ -70,6 +70,8 @@ python manage.py makemigrations / python manage.py makemigrations core
 
 python manage.py migrate / python manage.py migrate core
 
+python manage.py migrate --fake-initial -> si ya se tiene migraciones anteriores se puede hacer esto para que hayan modificaciones
+
 # Cuando se tiene una base de datos ya creada
 
 pip install mysqlclient -> instala mysql
