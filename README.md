@@ -72,6 +72,8 @@ python manage.py migrate / python manage.py migrate core
 
 python manage.py migrate --fake-initial -> si ya se tiene migraciones anteriores se puede hacer esto para que hayan modificaciones
 
+pip install drf-spectacular -> Documentacion automatica
+
 # Cuando se tiene una base de datos ya creada
 
 pip install mysqlclient -> instala mysql
